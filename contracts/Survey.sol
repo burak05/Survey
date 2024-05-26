@@ -4,7 +4,7 @@ pragma solidity ^0.8.0;
 contract SurveyContract {
     struct Survey {
         uint id;
-        string question;
+        string question; // String soru
         bool isRatingSurvey; // Anket tipini belirler: true ise puanlama, false ise metin yanıtlı
         mapping(uint => uint) ratings; // Puanlamaları saklar
         string[] responses; // Metin yanıtlarını saklar
